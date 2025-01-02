@@ -1,0 +1,299 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.bloque3 {
+    background-color: v.$quinto;
+    padding: v.$separator_movil;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.bloque3ImageMovil {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    @include m.desktop_1020 {
+        display: none;
+    }
+}
+
+.bloque3ImageDesktop {
+    display: none;
+    @include m.desktop_1020 {
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 0;
+    }
+}
+
+.bloque3Container {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.bloque3Left {
+    height: auto;
+    // background-color: purple;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    row-gap: 3rem;
+    @include m.desktop_1020 {
+        width: 50%;
+        padding-left: 6rem;
+    }
+    @include m.desktop_1120 {
+        // padding-left: 6rem;
+    }
+    .bloque3LeftTitle {
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
+        justify-items: center;
+        align-items: center;
+        position: relative;
+        z-index: 3;
+        width: 25rem;
+        @include m.desktop_1020 {
+            // width: 38rem;
+            width: 100%;
+            align-items: flex-start;
+        }
+        @include m.desktop_1120 {
+            width: 100%;
+            align-items: flex-start;
+        }
+        h3, h4 {
+            margin: 0;
+            color: white;
+            font-weight: 400;
+            text-align: center;
+        }
+        h3 {
+            font-size: v.$phone_title_size;
+            width: 21rem;
+            @include m.desktop_1020 {
+                font-size: v.$desktop_title_size;
+                text-align: left;
+                width: 50rem;
+            }
+            span {
+                font-weight: 800;
+            }
+        }
+        h4 {
+            font-size: v.$phone_sub_size;
+            @include m.desktop_1020 {
+                font-size: calc(v.$phone_sub_size + .2rem);
+                text-align: left;
+            }
+        }
+    }
+}
+
+.bloque3LeftSlider {
+    position: relative;
+    z-index: 5 !important;
+    overflow: hidden;
+    width: 100%;
+    padding-bottom: 6rem;
+    @include m.desktop_1020 {
+        width: 100%;
+        // padding-left: 6rem;
+    }
+    @include m.desktop_1200 {
+        padding-left: 0;
+    }
+}
+
+.slider__container2 {
+    height: auto;
+    // position: relative;
+    width: 100%;
+    @include m.tablet_760 {
+        max-width: 55rem;
+    }
+    @include m.desktop_1000 {
+        overflow: hidden;
+        // width: 50%;
+    }
+    @include m.desktop_1020 {
+        // max-width: v.$max-width-1020;
+        // max-width: 50rem;
+        max-width: 100%;
+        display: grid !important;
+        // grid-template-columns: repeat(4, 1fr);
+        // height: 28rem;
+        height: auto;
+        width: 90rem;
+        // background-color: red;
+    }
+    @include m.desktop_1120 {
+        max-width: 100%;
+    }
+}
+  
+.slider__grid2 {
+    // position: relative;
+    display: flex;
+    height: auto;
+    @include m.desktop_1020 {
+        overflow: visible !important;
+        height: 100%;
+        // position: absolute;
+        width: 100%;
+        // background-color: green;
+    }
+    @include m.desktop_1220 {
+        padding-top: 3rem;
+    }
+}
+
+.slider__item2.swiper-slide {
+    // margin-top: 4rem;
+    height: auto;
+    // position: relative;
+    display: grid !important;
+    width: 100%;
+    // background-color: green;
+    height: auto;
+    // align-content: center;
+    justify-items: center;
+    // margin-bottom: 3rem;
+
+    @include m.tablet_760 {
+        // padding-bottom: 8rem;
+    }
+    @include m.desktop_1020 {
+        padding-bottom: 0;
+        // margin-top: 4rem !important;
+        overflow: visible !important;
+        // width: 36.5% !important;
+        // background-color: purple;
+    }
+    @include m.desktop_1020 {
+        justify-items: flex-start;
+    }
+}
+  
+  
+  //ancho-individual
+.sliderItemInfo2 {
+    width: 23rem;
+    height: auto;
+    border-radius: 1rem;
+    // background-color: purple;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    row-gap: 2rem;
+    @include m.desktop_1020 {
+        flex-direction: row;
+        column-gap: 3rem;
+        align-items: flex-start;
+        width: auto;
+    }
+    img {
+        width: 13rem;
+    }
+    h3 {
+        margin: 0;
+        text-align: center;
+        color: white;
+        font-weight: 400;
+        font-size: 1.2rem;
+        @include m.desktop_1020 {
+            font-size: 1.4rem;
+            padding-top: 2rem;
+            border-top: 1px solid white;
+            text-align: left;
+            width: 28rem;
+        }
+    }
+}
+
+.swiper-arrows2 {
+    // background-color: orange;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 0;
+    height: auto;
+    @include m.desktop_1020 {
+        bottom: 2rem;
+        width: 38rem;
+    }
+    // @include m.desktop_1060 {
+    //     width: 74%;
+    // }
+    // @include m.desktop_1120 {
+    //     width:75%;
+    // }
+    h3 {
+        margin: 0;
+        font-size: 4rem;
+        font-weight: lighter;
+        color: white;
+        z-index: 30;
+        position: relative;
+        // z-index: 201;
+    }
+}
+  
+.swiper-button-next2 {
+    // height: 4.5rem;
+    width: auto;
+    height: 3rem;
+    color: black !important;
+    text-rendering: auto;
+    z-index: 30;
+    position: absolute !important;
+    bottom: .5rem;
+    right: 40%;
+    @include m.desktop_1020 {
+        bottom: 2.5rem;
+        left: 21rem;
+    }
+    // @include m.desktop_1060 {
+    //     right: 46%;
+    // }
+    // @include m.desktop_1120 {
+    //     right: 44%;
+    // }
+    img {
+        width: 1.3rem;
+    }
+}
+  
+.swiper-button-prev2 {
+    // height: 4.5rem;
+    // background-color: red;
+    width: auto;
+    height: 3rem;
+    color: black !important;
+    position: absolute !important;
+    // left: 2rem !important;
+    text-rendering: auto;
+    z-index: 30;
+    bottom: .5rem;
+    left: 40%;
+    @include m.desktop_1020 {
+        bottom: 2.5rem;
+        left: 16rem;
+    }
+    @include m.desktop_1120 {
+        // left: 26%;
+    }
+    img {
+        width: 1.3rem;
+    }
+}
+
+

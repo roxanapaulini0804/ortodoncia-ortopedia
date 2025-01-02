@@ -1,0 +1,151 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.bloque6 {
+    height: auto;
+    background-color: v.$cuarto;
+    padding: v.$separator_movil;
+    position: relative;
+    overflow: hidden;
+    z-index: 30;
+    .bloque6ImageDesktop {
+        display: none;
+        @include m.desktop_1020 {
+            display: block;
+            position: absolute;
+            width: 39.2%;
+            right: 0;
+            bottom: 0;
+            z-index: 1;
+        }
+        // @include m.desktop_1040 {
+        //     width: 40.8rem;    
+        // }
+        // @include m.desktop_1060 {
+        //     width: 41.5rem;    
+        // }
+        // @include m.desktop_1080 {
+        //     width: 42.3rem;
+        // }
+        // @include m.desktop_1100 {
+        //     width: 43rem;
+        // }
+        @include m.desktop_1120 {
+            // width: 39.15%;
+        }
+        // @include m.desktop_1200 {
+        //     width:49.9rem;
+        // }
+    }
+}
+
+.bloque6Container {
+    @include m.desktop_1020 {
+        width: 50%;
+        padding-left: 6rem;
+    }
+}
+
+.bloque6Left {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    @include m.desktop_1020 {
+        align-items: flex-start;
+    }
+    .bloque6Title {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        @include m.desktop_1020 {
+            align-items: flex-start;
+        }
+        h3 {
+            font-size: v.$phone_title_size;
+            width: 21rem;
+            margin: 0;
+            color: black;
+            font-weight: 400;
+            text-align: center;
+            z-index: 20;
+            position: relative;
+            @include m.desktop_1020 {
+                width: 100%;
+                text-align: left;
+                font-size: v.$desktop_title_size;
+            }
+            span {
+                font-weight: 800;
+            }
+        }
+    }
+}
+
+.bloque6Tutor {
+    // background-color: green;
+    width: 25rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    row-gap: 1.5rem;
+    @include m.desktop_1020 {
+        width: 100%;
+        flex-direction: row;
+        column-gap: 2rem;
+        margin-top: 2rem;
+    }
+    img {
+        width: 15rem;
+    }
+    h3 {
+        margin: 0;
+        text-align: center;
+        font-size: 1.4rem;
+        font-weight: 500;
+        @include m.desktop_1020 {
+            text-align: start;
+            font-size: 1.6rem;
+            position: relative;
+            z-index: 10;
+        }
+    }
+    .bloque6TutorTitle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: .5rem;
+        @include m.desktop_1020 {
+            align-items: flex-start;
+            width: 100%;
+        }
+        h3, h4 {
+            margin: 0;
+            font-weight: 500;
+            font-size: 1.8rem;
+            @include m.desktop_1020 {
+                font-size: 2.2rem;
+            }
+        }
+        h4 {
+            font-weight: 800;
+            font-size: 1.2rem;
+            @include m.desktop_1020 {
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+
+.bloque6TutorDesktop {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    row-gap: 1.5rem;
+}

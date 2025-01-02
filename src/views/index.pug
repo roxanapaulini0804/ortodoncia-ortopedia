@@ -1,0 +1,351 @@
+doctype html
+html(lang="es")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        meta(http-equiv='Expires' content='0')
+        meta(http-equiv='Last-Modified' content='0')
+        meta(http-equiv='Cache-Control' content='no-cache, mustrevalidate')
+        meta(http-equiv='Pragma' content='no-cache')
+        title Conversatorios Cayetano
+        link(rel="stylesheet", href="./css/app.css")
+        link(rel="stylesheet", href="https://unpkg.com/swiper/swiper-bundle.min.css")
+        script(src='https://www.google.com/recaptcha/api.js' async='' defer='')
+        //- script(async).
+        //-     (function(h,o,t,j,a,r){
+        //-     h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        //-     h._hjSettings={hjid:3659234,hjsv:6};
+        //-     a=o.getElementsByTagName('head')[0];
+        //-     r=o.createElement('script');r.async=1;
+        //-     r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        //-     a.appendChild(r);
+        //-     })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+        link(rel='preconnect' href='https://fonts.googleapis.com')
+        link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+        link(href='https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap' rel='stylesheet')
+    
+    
+    body
+        .bloqueFloat(onclick="topScroll()")
+            h3 Más información
+        .bloqueFloat2(onclick="topScroll2()")
+            h3 Más información
+        script.
+            function topScroll(){
+                if( screen.width >= 319 ) {
+                    window.scrollTo(0, 600)
+                } 
+                if ( screen.width >= 359 ) {
+                    window.scrollTo(0, 750)
+                } 
+            }
+            function topScroll2(){
+                if( screen.width >= 1019 ) {
+                    window.scrollTo(0, 30)
+                } 
+            }
+
+
+
+
+
+
+
+
+
+        .bloque1 
+            //- img.bloque1ImageMovil(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/09/esp_est_movil_top.webp", alt="")
+            //- img.bloque1ImageDesktop(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/09/esp_est_desktop-scaled.webp", alt="")
+            .bloque1Container
+                .bloque1Left
+                    img.bloque1LeftLogo(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/09/especialidades-logo-alta-scaled.webp", alt="")
+                    .bloque1LeftTitle
+                        h3 Segunda Especialidad Profesional
+                        h2 en Ortodoncia y Ortopedia Maxilar
+
+                    .bloque1LeftSubtitle
+                        img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/09/esp_logo2_top.webp", alt="")
+                        h3 Preventa válida hasta:
+                        h4 25 de marzo 
+                .bloque1Right
+        .bloque2
+            .bloque2Container
+                .bloque2Left
+                    .bloque2LeftTitle
+                        h3 Amplía tu horizonte profesional con 
+                            span los mejores
+                    .bloque2LeftDescription
+                        .bloque2LeftItem
+                            img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/09/esp_est_icon2.webp", alt="")
+                            .bloque2LeftItemDesc
+                                h3 Modalidad:
+                                h2 Presencial
+                        .bloque2LeftItem
+                            img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/09/esp_est_icon3.webp", alt="")
+                            .bloque2LeftItemDesc
+                                h3 Duración:
+                                h2 6 semestres
+
+                        .bloque2LeftItem
+                            img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/09/esp_est_icon1.webp", alt="")
+                            .bloque2LeftItemDesc
+                                h3 Inicio:
+                                h2 2 de mayo del 2025
+
+                .bloque2Right
+                    .bloque2LeftSeparator
+                        .bloque2LeftSeparatorLine
+                        img.bloque1LeftLogoDesktop(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/09/especialidades-logo-alta-scaled.webp", alt="")
+                    .bloque2RightTitle
+                        h3 Especialízate en 
+                            span tu profesión 
+                        h4 Déjanos tus datos para brindarte una atención personalizada.
+                    .bloque2Form
+                        .bloque2InputDouble
+                            input(type="text" placeholder="Nombres*")
+                            input(type="text" placeholder="Apellidos*")
+                        input(type="text" placeholder="Correo*")
+                        input(type="text" placeholder="N° de Whatsapp*")
+                        .bloque2InputDouble
+                            input(type="text" placeholder="Tipo de doc.*")
+                            input(type="text" placeholder="N° de doc*")
+                        input(type="text" placeholder="Departamento*")
+                        //- .bloque2InputDouble
+                        //-     //desplegable
+                        //-     input(type="text" placeholder="Departamento*")
+                        //-     //escrito
+                        //-     input(type="text" placeholder="Ciudad*")
+                        //- input(type="text" placeholder="Grado Académico*")
+                        .bloque2Terminos
+                            input(type="checkbox" name="check")
+                            label(for="check") Política de privacidad y términos de servicio.  
+                        .bloque2Button
+                            button 
+                                h3 Enviar
+        .bloque3
+            img.bloque3ImageMovil(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/09/esp_movil_shield1-scaled.webp", alt="")
+            img.bloque3ImageDesktop(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/09/esp_dekstop_shield1.webp", alt="")
+            .bloque3Container
+                .bloque3Left
+                    .bloque3LeftTitle
+                        h3 Especialízate para 
+                            span tu futuro
+                        h4 Prepárate para el diagnóstico y tratamiento de la patología pulpar y periapical de mediana y alta complejidad.
+
+                    .bloque3LeftSlider
+                        .slider__container2.swiper.mySwiper2
+                            .slider__grid2.swiper-wrapper
+                                .slider__item2.swiper-slide
+                                    .sliderItemInfo2
+                                        img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/endodoncia-rtb-1@4x.webp", alt="")
+                                        h3 Te formarás con un enfoque conservador y bioético, priorizando la preservación de las estructuras dentales y el bienestar del paciente.
+                                           span estructuras dentales y el bienestar del paciente.
+                                .slider__item2.swiper-slide
+                                    .sliderItemInfo2
+                                        img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/endodoncia-rtb-3@4x.webp", alt="")
+                                        h3 Utilizarás equipos y técnicas de última generación que te permitirán realizar diagnósticos precisos y tratamientos eficientes.
+                                .slider__item2.swiper-slide
+                                    .sliderItemInfo2
+                                        img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/endodoncia-rtb-2@4x.webp", alt="")
+                                        h3 Diseñarás y promoverás investigaciones, aportando al desarrollo de la endodoncia en el país.
+                        .swiper-arrows2
+                            h3 |
+                        .swiper-button-prev2
+                            img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/09/esp-arrow-right-white.png", loading="lazy", alt="egel_enfermeria_arrow_left_black")
+                        .swiper-button-next2
+                            img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/09/esp-arrow-left-white.png", loading="lazy", alt="egel_enfermeria_arrow_rigjt_black")
+                        //- .swiper-pagination3 
+                .bloque3Right
+        .bloque4
+            .bloque4Container
+                .bloque4Left
+                    .bloque4LeftTop
+                        .bloque4LeftTopTitle
+                            h3 Conoce todos los cursos de esta 
+                                span especialidad
+                        .bloque4LeftBottomItems
+                            .bloque4LeftBottomItem
+                                .LeftBottomItemTop.LeftBottomItemTop1
+                                    h3 I semestre
+                                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/09/esp_arrow_up_black-scaled.webp", alt="")
+                                .LeftBottomItemBottomContainer
+                                    .LeftBottomItemBottom.LeftBottomItemBottom1
+                                        h4 Cursos
+                                        h3 Biomecánica I
+                                        h3 Cefalometría
+                                        h3 Clínica de Ortodoncia I
+                                        h3 Control de Infecciones y Bioseguridad en Estomatología
+                                        h3 Crecimiento y Desarrollo Craneofacial y Desarrollo de la Dentición
+                                        h3 Diagnóstico y Planificación en Ortodoncia I
+                                        h3 Estrategias de Búsqueda Bibliográfica
+                                        h3 Fotografía Clínica e Informática Básica
+                                        h3 Medicina Oral en la Práctica Generall
+                                        h3 Oclusión
+                                        h3 Aspectos Éticos y Legales en Estomatología
+                                       
+                                        
+                                        
+                            .bloque4LeftBottomItem
+                                .LeftBottomItemTop.LeftBottomItemTop2
+                                    h3 II semestre
+                                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/09/esp_arrow_up_black-scaled.webp", alt="")
+                                .LeftBottomItemBottomContainer
+                                    .LeftBottomItemBottom.LeftBottomItemBottom2
+                                        h4 Cursos
+                                        h3 Biomecánica II 
+                                        h3 Clínica de Ortodoncia II
+                                        h3 Diagnóstico y Planificación en Ortodoncia II 
+                                        h3 Diagnóstico y Planificación Ortodóncico-quirúrgico de las Deformidades Dentofaciales
+                                        h3 Etiologías de las Maloclusiones 
+                                        h3 Investigación en Ortodoncia I 
+                                        h3 Laboratorio de Ortodoncia I 
+                                        h3 Tomografía Computarizada
+                                        h3 Tratamiento de las Maloclusiones I
+
+
+
+
+                            .bloque4LeftBottomItem
+                                .LeftBottomItemTop.LeftBottomItemTop3
+                                    h3 III semestre
+                                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/09/esp_arrow_up_black-scaled.webp", alt="")
+                                .LeftBottomItemBottomContainer
+                                    .LeftBottomItemBottom.LeftBottomItemBottom3
+                                        h4 Cursos
+                                        h3 Clínica de Ortodoncia III
+                                        h3 Diagnóstico y Planificación en Ortodoncia III 
+                                        h3 Investigación en Ortodoncia II
+                                        h3 Laboratorio de Ortodoncia II
+                                        h3 Ortopedia Funcional de los Maxilares
+                                        h3 Revisión de Literatura en Ortodoncia I
+                                        h3 Tratamiento de las Maloclusiones II
+
+                            
+
+                            .bloque4LeftBottomItem
+                                .LeftBottomItemTop.LeftBottomItemTop4
+                                    h3 IV semestre
+                                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/09/esp_arrow_up_black-scaled.webp", alt="")
+                                .LeftBottomItemBottomContainer
+                                    .LeftBottomItemBottom.LeftBottomItemBottom4
+                                        h4 Cursos
+                                        h3 Biomecánica III 
+                                        h3 Clínica de Ortodoncia IV
+                                        h3 Investigación Aplicada a Endodoncia IV  
+                                        h3 Materiales Dentales Aplicados en Ortodoncia
+                                        h3 Revisión de Literatura en Ortodoncia II  
+                                        h3 Teoría del Arco de Canto y Arco Recto
+                            
+                            .bloque4LeftBottomItem
+                                .LeftBottomItemTop.LeftBottomItemTop5
+                                    h3 IV semestre
+                                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/09/esp_arrow_up_black-scaled.webp", alt="")
+                                .LeftBottomItemBottomContainer
+                                    .LeftBottomItemBottom.LeftBottomItemBottom5
+                                        h4 Cursos
+                                        h3 Clínica de Ortodoncia V
+                                        h3 Investigación en Ortodoncia IV
+                                        h3 Ortodoncia Lingual
+                                        h3 Relación Ortodoncia y Periodoncia
+                                        h3 Revisión de Literatura en Ortodoncia III  
+                                        
+                            
+                           
+
+
+                           
+                    .bloque4LeftBottom
+                        h3 Descubre cómo avanzar en 
+                            span tu carrera
+                        .bloque4LeftBottomButton
+                            button 
+                                img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/09/esp_icon_download.webp", alt="")
+                                h3 Descargar brochure
+                .bloque4Right
+        .bloque5
+            .bloque5Container 
+                .bloque5Left
+                    .bloque5Title
+                        h3 ¿Por qué estudiar 
+                            span  en Cayetano?
+                    .bloque5Content
+                        .bloque5Item
+                            h4 
+                                span +
+                                | 62
+                            h3 años de excelencia académica.
+                        .bloque5Item
+                            img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/09/esp_est_icon4.webp", alt="")
+                            h3 Único programa de residencia que brinda especialización en Patología Maxilofacial.
+                        .bloque5Item
+                            img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/09/esp_est_icon5.webp", alt="")
+                            h3 Rotación internacional en prestigiosas instituciones con las que tenemos convenio.
+                .bloque5Right
+        .bloque6
+            img.bloque6ImageDesktop(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/09/esp_dekstop_shield2-scaled.webp", alt="")
+            .bloque6Container
+                .bloque6Left
+                    .bloque6Title
+                        h3 Con Cayetano, la excelencia 
+                            span es parte de ti
+                    .bloque6Tutor
+                        img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/antonio-denegri-endodoncia@4x.webp", alt="")
+                        .bloque6TutorDesktop
+                            .bloque6TutorTitle
+                                h3 Orlando Tuesta Da Cruz
+                                h4 Coordinador del programa
+                            h3 Egresado de la Universidad Nacional San Luis Gonzaga de Ica, con Especialidad en Ortodoncia y Maestría en Estomatología por la UPCH. Actualmente, se desempeña como Coordinador y Docente del Programa de Segunda Especialidad Profesional en Ortodoncia y Ortopedia Maxilar.
+
+        .bloque7
+            img.bloque7Back(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/09/esp_movil_shield2-scaled.webp", alt="")
+            img.bloque7BackDesktop(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/09/esp_dekstop_shield3.webp", alt="")
+            .bloque7Container
+                .bloque7Left
+                    .bloque7Title
+                        h3 Cronograma de 
+                            span  actividades
+                    .bloque7Content
+                        //- .bloque7Item
+                        //-     img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/09/esp_cron_image1.webp", alt="")
+                        //-     .bloque7ItemText
+                        //-         h4 Cierre de inscripciones: 
+                        //-         h5 4 de noviembre del 2024
+                        //- .bloque7Item
+                        //-     img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/09/esp_cron_image2.webp", alt="")
+                        //-     .bloque7ItemText
+                        //-         h4 Evaluación curricular: 
+                        //-         h5 5 de noviembre del 2024
+                        //- .bloque7Item
+                        //-     img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/09/esp_cron_image3.webp", alt="")
+                        //-     .bloque7ItemText
+                        //-         h4 Examen de conocimiento: 
+                        //-         h5 6 de noviembre del 2024
+                        //- .bloque7Item
+                        //-     img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/09/esp_cron_image4.webp", alt="")
+                        //-     .bloque7ItemText
+                        //-         h4 Entrevista personal I 
+                        //-         h3 Publicación de resultados:
+                        //-         h5 7 de noviembre del 2024
+                        .bloque7Item
+                            img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/09/esp_cron_image5.webp", alt="")
+                            .bloque7ItemText
+                                h4 Fechas de matrícula: 
+                                h5 Del 21 al 26 de abril del 2025 
+
+                        .bloque7Item
+                            img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/09/esp_cron_image6.webp", alt="")
+                            .bloque7ItemText
+                                h4 Inicio de actividades: 
+                                h5 2 de mayo del 2025
+                        .bloque7Button
+                          button
+                            h3 Más información
+                .bloque7Right
+        footer
+            .bloque8Top
+                img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/10/footer_image1.webp", alt="")
+                img.bloque8Image(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/10/footer_image2.webp", alt="")
+            img.bloque8Image.bloque8Desktop(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/10/footer_image3-scaled.webp", alt="")
+        script(src="./js/script.js" async)
+        script(src="https://unpkg.com/swiper/swiper-bundle.min.js")

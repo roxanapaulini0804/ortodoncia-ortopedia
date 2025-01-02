@@ -1,0 +1,273 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.bloque2 {
+    background-color: v.$cuarto;  
+    height: auto;
+    width: 100%;
+}
+
+.bloque2Container {
+    display: flex;
+    flex-direction: column-reverse;
+    // @include m.desktop_1020 {
+    //     display: flex;
+    //     align-items: center;
+    // }
+}
+
+.bloque2Left {
+    height: auto;
+    // background-color: purple;
+    padding: v.$separator_movil;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    row-gap: 3rem;
+    @include m.desktop_1020 {
+        width: 55%;
+        padding-left: 6rem;
+    }
+    .bloque2LeftTitle, .bloque2LeftDescription {
+        width: 25rem;
+        @include m.desktop_1020 {
+            width: 100% !important;
+        }
+    }
+    .bloque2LeftTitle {
+        display: flex;
+        flex-direction: column;
+        row-gap: .5rem;
+        justify-items: center;
+        align-items: center;
+        h3 {
+            margin: 0;
+            color: black;
+            font-weight: 500;
+            text-align: center;
+            font-size: v.$phone_title_size;
+            width: 23rem;
+            @include m.desktop_1020 {
+                width: 100%;
+                text-align: start;
+                font-size: v.$desktop_title_size;
+            }
+            span {
+                font-weight: 800;
+            }
+        }
+    }
+}
+
+.bloque2LeftDescription {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    row-gap: 2rem;
+    width: 18rem !important;
+    @include m.desktop_1020 {
+        flex-direction: row;
+        width: 100% !important;
+        // background-color: green;
+        column-gap: 1rem;
+    }
+    .bloque2LeftItem {
+        display: flex;
+        column-gap: 1rem;
+        // background-color: red;
+        @include m.desktop_1020 {
+            width: 20rem !important;
+            justify-content: center;
+            &:nth-child(1) {
+                border-right: 1.5px solid black;
+                justify-content: flex-start;
+            }
+            &:nth-child(2) {
+                border-right: 1.5px solid black;
+                justify-content: flex-start;
+            }
+            &:nth-child(3) {
+                padding-left: 1rem;
+            }
+        }
+        img {
+            width: auto;
+            height: 3rem;
+        }
+        .bloque2LeftItemDesc {
+            display: flex;
+            flex-direction: column;
+            row-gap: .3rem;
+            h3, h2 {
+                margin: 0;
+                color: black;
+                font-weight: 500;
+            }
+            h3 {
+                font-size: 1.5rem;
+                font-weight: 800;
+            }
+            h2 {
+                font-size: 1.7rem;
+            }
+        }
+    }
+}
+
+.bloque2Right {
+    padding: v.$separator_movil;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    row-gap: 1.5rem;
+    position: relative;
+    @include m.desktop_1020 {
+        position: fixed;
+        width: 35rem;
+        background-color: white;
+        top: 0;
+        z-index: 100;
+        right: 5%;
+        // top: 3%;
+        // border: .5px solid black;
+        border-bottom-right-radius: 1.5rem;
+        border-top-left-radius: 1.5rem;
+        padding: 3rem 0;
+        top: calc(100vh - 91%);
+        box-shadow: -1px -2px 15px 2px rgba(0,0,0,0.1);
+        -webkit-box-shadow: -1px -2px 15px 2px rgba(0,0,0,0.1);
+        -moz-box-shadow: -1px -2px 15px 2px rgba(0,0,0,0.1);
+    }
+    @include m.desktop_1280 {
+        width: 40rem;
+        top: calc(100vh - 89%);
+    }
+    .bloque1LeftLogoDesktop {
+        display: none;
+        @include m.desktop_1020 {
+            display: block;
+            width: 21rem;
+        }
+    }
+    .bloque2LeftSeparator {
+        position: absolute;
+        width: 100%;
+        height: 2rem;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include m.desktop_1020 {
+            display: none;
+        }
+        .bloque2LeftSeparatorLine {
+            width: 25rem;
+            height: 100%;
+            border-bottom: 2px solid black;
+        }
+    }
+    .bloque2RightTitle, .bloque2Form {
+        width: 25rem;
+        @include m.desktop_1280 {
+            width: 30rem;
+        }
+    }
+    .bloque2RightTitle {
+        display: flex;
+        flex-direction: column;
+        row-gap: .5rem;
+        justify-items: center;
+        align-items: center;
+        h3, h4 {
+            margin: 0;
+            color: black;
+            font-weight: 500;
+            text-align: center;
+        }
+        h3 {
+            font-size: v.$phone_title_size;
+            width: 18rem;
+            span {
+                font-weight: 800;
+            }
+        }
+        h4 {
+            font-size: v.$phone_sub_size;
+        }
+    }
+}
+
+.bloque2Form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    input, select {
+        height: 3rem;
+        border-radius: 1rem;
+        border: 1px solid black;
+        outline: none;
+        background-color: transparent;
+        padding-left: 1rem;
+        &::placeholder {
+            color: black;
+        }
+        @include m.desktop_1200 {
+            height: 4rem;
+            font-size: 1.5rem;
+            &::placeholder {
+                font-size: 1.5rem;
+            } 
+        }
+    }
+    .bloque2InputDouble {
+        height: 3rem;
+        display: flex;
+        column-gap: 1rem;
+        input, select {
+            width: 100%;
+        }
+        @include m.desktop_1200 {
+            height: 4rem;
+        }
+    }
+    .bloque2Terminos {
+        display: flex;
+        column-gap: .5rem;
+        label {
+            display: flex;
+            align-items: center;
+            font-size: 1rem;
+            font-weight: 700;
+            @include m.desktop_1200 {
+                font-size: 1.3rem;
+            }
+        }
+    }
+    .bloque2Button {
+        // background-color: purple;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        button {
+            width: 13rem;
+            background-color: black;
+            border-radius: 1rem;
+            border: none;
+            @include m.desktop_1200 {
+                width: 15rem;
+            }
+            h3 {
+                color: white;
+                padding: 1rem 0;
+                margin: 0;
+                font-size: 1.8rem;
+                @include m.desktop_1200 {
+                    padding: 1.3rem 0;
+                }
+            }
+        }
+    }
+}
